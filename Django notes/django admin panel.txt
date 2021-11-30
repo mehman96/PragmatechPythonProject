@@ -1,0 +1,18 @@
+1. ./manage.py createsuperuser
+admin panelde deyisklik etmek istesek (gorunus)
+admin.site.index.title = ""
+admin.site.site.header = ""
+Adminsite -admin panel ucun
+
+class Meta
+verbose name -cemlemek ucun
+ordering = (-table adi)- en son elave olunani birinci gosterir
+one-two-one - meselen bir adamin birdene şəxsiyyət vesiqesi ola biler
+many to many - meselen instagramda bir postun altinda olan
+teqler .hemin  teqlere klik edende ona aid postlar gelir
+bir post paylasmisiq altinda sport car deye tutaq teqler vr
+burda meselen sport klik edende sport aid xeberler gelirone 
+one to many olanda meselen bir yazar var bu olur one teref
+many olanda olur kitablar deyek bir yazarin 10 dene kitabi ola biler yeni
+cox teref haradisa foregn key ora veririk
+on_delete --hamsi silir

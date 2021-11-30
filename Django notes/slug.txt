@@ -1,0 +1,12 @@
+slug - bir website deyek 100 dene sehife olacaq , biz ora meselen
+navbar var deyek about blog hissesi var onlara klikk edende mes blog.html
+gedir.dusunsek boyuk bir project var ve ya fb dusunsek 
+onun milyonlarla istifadesi var , her user ucun ayri bir sehife yaratmaq
+zulm olar hem mentiqsiz o qeder usere sehife yazmaq .
+slug bunun ucundu ki biz sehifeleri tapib cagira bilek
+slug herfleri latin - (en) diline cevirir .
+.gitignore fayl
+git e push edende fayl fayillari push etemek istemirikse
+meseln env papkasin
+faylin icinde env/
+

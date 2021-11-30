@@ -1,0 +1,11 @@
+myfirstjango 
+setting.py 
+App dirs=True
+bu onun ucundur ki app icinde templates folderini axtarmaga icaze verir
+False olsa folderden kenar template folderi varsa onu axtarir
+**name anlayisi**
+url for ucun istifade olunur
+{% url 'views.py yazdigimiz name' %}
+request= esas url
+content- for atmaq lazim olan dic keyleridi
+datalari bir yerde saxlamaq ucun dictionarydi

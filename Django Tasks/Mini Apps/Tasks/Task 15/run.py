@@ -1,0 +1,1 @@
+# Sample List : (8, 2, 3, -1, 7) Expected Output : -336

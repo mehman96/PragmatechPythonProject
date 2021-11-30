@@ -1,0 +1,33 @@
+namespace
+1 ci django icinde olan url.py
+include import edirk 
+bu o demekdir ki biz oz app ucun url.py adinda fayl yaradib ordan
+cagirmaq istiyirkse onda includesden istifade edirik
+htmlda yazanda namespace ve vieevde qoydugumuz name
+includes - eyni hissleri bu haqqda papka yaradib base.html kod setirini
+azaldiriq
+{% include 'includes/html adi'   %}
+static folder -css js 
+folderi taniTmaq
+import os	
+static_url olan yerde(Setting.py)
+STATICFILES_DIRS=[
+    os.path.join(BASE_DIR, 'static/ccs adi')
+]
+
+BASE_DIR- ana url(director) , applerin url burdan gelir
+
+database den yuklenen sekiller ora dussun
+media folderi yaradirq
+MEDIA_URL= '/media/'
+MEDIA_ROOT=os.path.join(BASE_DIR, 'media')
+sonra
+urls.py
+import edirk bunu :
+from django.conf.urls.static import static
+from django.conf import settings
+urlpattern listin baglanan yerde
++static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
+sora html da (hansida istifade edeceyikse)
+{% load static %}
+img src yerinde {% static 'images/aa.jpg' %}

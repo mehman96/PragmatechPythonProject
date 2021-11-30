@@ -1,0 +1,74 @@
+verbose_name-admin panelde gorunus ucun
+SQL querry
+./manage.py shell
+a.objects.all()- select * from a
+her bir table 1 manager olur, ve butun table yaradan objectleri olur
+FILTER(Querryset)
+a.objects.get(pk=1)- id 1 olan objecti getirir
+a.objects.filter(pk=1)-Queryset ile qaytarir(data tip)
+b1=a.objects.filter(pk=1)
+b1 
+yazsaq bize eror verecek yeni id gostermir.(queryset eroru)
+burdan cixarmaq ucun
+b1=a.objects.filter(id=1).first()
+b1.id
+filter cox
+
+GET ile yazsaq
+b1=a.objects.get(pk=1)
+b1 
+bize id qaytaracaq(hemise querryset den cixardir)
+get 1 deyer qaytaririr
+filtered_list adi=Table adi.objects.filter(deyismek istediyimiz tabledaki field__exacts='')
+filtered_table adi
+iexacts - meselen database de adi boyukle yazib 
+ama iexacts ile yazanda adi balacada yazsaq tapib getirir
+a=table adi.objects.filter(relation___deyismek istediyimiz tabledaki field__iexact='')
+startswith= '' -
+a.objects.filter(relation__field adi__startwith='A')
+gt-greater tham
+lt-less than
+lte
+from datatime import datetime
+
+django objects
+django db.modelden q objcet f object count 
+
+* f object *
+table olanda datalarin sayin tapir
+from django db.models import Sum,Min,Max,Avg
+daha sonra
+Table adi.objects.all().aggregate(Sum('flieds adi'))
+	Table adi.objects.all().aggregate(Max('flieds adi'))
+Table adi.objects.all().aggregate(Min('flieds adi'))
+Table adi.objects.all().aggregate(Avg('flieds adi'))
+
+*q object*
+
+
+
+
+is_active ancaq aktiv sehifeleri gosterir
+funksiyada yazaq object.all() yerine object.filter(is_activate=True)
+objects.count - sayini gosterir
+Table adi.objects.values('fliedin adi')- deyerler gosterir.list sekilinde , field adi ve deyeri
+table adi.objects.values_list('fliedin adi',flat=True)-sadece deyerleri gosterir
+
+from django.models import F
+datalari update etmek
+databasede yaratdigimiz tablelari datebase gondermedn memory ve
+sql kodlarini icra edir..
+a.fieldin adi=F('fieldin adi')+ 10 (meslen)
+
+*********************************************
+django q object
+from.django.models import Q
+Table adi.objects.filter(Q(name__startswith='abc')  (and)
+Table adi.objects.filter(Q(name__endswith='abc')| Q('name'__endswith 'qwe'))   (or)
+
+Django Make Queries
+
+
+
+
+

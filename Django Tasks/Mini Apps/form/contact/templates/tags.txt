@@ -1,0 +1,52 @@
+Tags******************
+
+
+<!-- boyuk herfle yazir -->
+<!--{{ "value"|upper }}  --> 
+
+<!-- bas heriflerini boyuk yazir -->
+<!-- {{ "value"|title }} -->
+
+<!-- aralarinda ----- qoyur -->
+<!-- {{ "value"|slugify }} -->
+
+<!-- sozler arasindaki boslugu sayir -->
+<!-- {{ "value"|wordcount }} -->
+
+
+<!-- cumle ve ya sozun icindeki herfleri random ekrana cixarir -->
+<!-- {{ "value"|random }} -->
+
+random lorem atir
+{% lorem %}
+
+ Dəyərin ilk simvolunu böyük hərflə yazır. Əgər birinci simvol 
+ hərf deyilsə,bu filtrin heç bir təsiri yoxdur 
+{{"value"|capfirst}}
+
+
+float format
+{{34.222334|floatformat}}
+
+cumlenin ve ya sozun uzunlugunu qaytarir
+{{ "value"|length }}
+
+sonuncu deyer nedise onu qaytarir
+{{ "value"|last }}
+
+str.join(list) kimi liste qosulur
+{{ "value"|join:" // " }}
+
+
+"" icindeki ilk deyeri qaytarir
+{{ "value"|first }}
+
+kesmek istediyimiz sozu ucun
+{{ value|cut:" " }}
+
+
+value="I'm using Django  output ="I\'m using Django"
+CSV file ucun faydalir
+{{ "value"|addslashes }}
+
+*************************

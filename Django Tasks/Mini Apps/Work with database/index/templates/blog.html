@@ -1,0 +1,19 @@
+
+{% extends 'base.html' %}
+{% block content  %}
+
+{% load static %}
+<h2> This Blog Page </h2>
+{% for blog in blogs %}
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="{% static 'images/bmw.jpg' %}" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">{{blog.title}}</h5>
+    <p class="card-text">{{blog.desc}}</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+{% endfor  %}
+{% endblock  %}
+
+<h1>Blogs</h1>

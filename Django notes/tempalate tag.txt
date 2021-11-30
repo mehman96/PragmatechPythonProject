@@ -1,0 +1,6 @@
+jinja code commit 
+{% comment %}
+{% endcomment %}
+
+tag - for if bura aiddir
+filter- funksiya (obyektin ustunde isleyir)

@@ -1,0 +1,29 @@
+./manage.py migrate
+./manage.py makemigration
+Charflied-data typedi (max lengtht=127)
+127 yerlik yaddas tutur(2 lik say sistemine gore )
+null=true - modelde yazanda meselen
+  heading=models.CharField(max_length=127),null=True,blank=True
+heading yeni bos qoyula bilmez mecbur edirik ki ora data gonder
+blank=True -admin panel ucundu meseln orda heading bos qoyub kece bilerik
+false olsa eroor verir
+./manage.py makemigrations index(table deyiseceyimiz app adi)
+./manage.py migrate-push etdi yeni
+
+terminaldan data elave etmek
+1. ./manage.py shell
+2. oz databasemie import etmeliyik
+3. yaradagimiz app icindeki modellerden table import edirik
+4. yazdigimiz table gore deyer veririk
+blog1=Blog(table adi)heading='salam,', desc='necesen?'
+5. save etmek 
+blog1.save()
+
+table adi.object.all()
+hemin table obyektlerini goster demekdir
+Queryset-data tipdir
+id=pk(primary key)
+
+sora admin.py da table register etmeliyik
+from .models import (table adi)
+admin.site.register(table adi)

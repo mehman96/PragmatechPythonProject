@@ -1,0 +1,45 @@
+linux
+python3 -m venv env
+. env/bin/activate
+pip install Django
+django-admin startproject myfristdjango - 2 folder yaradacaq
+django-admin startproject myfristdjango . - bu meslehetdi
+python3 manage.py runserver
+./manage py makemigrations - migration
+./manage py migrate
+init.py - esas fayl 
+asgi.py -deployement ucun , web server local qlobal
+setting py
+base dir o demekdir ki folderlerin direcetlerini ozunde saxliyir
+secret key - security ucun attacklarin qarsini almaq ucun.
+Allowed hosts - serveri cokdurmeyin qarsisni almaq ucun meselen coxlu sorgu 
+gonderib sayti cokdure bilerler server guclu hecne olmaz , bele olanda da 
+IP adersi remove ede bilerik
+installed app -django da hazir gelen appler
+her hansi app i yaradanda burdan register etmleiyik
+middleware- request respons cycle request gonderende evvel ve repons qayidanda
+tehlukezsizle bagli olan seyler.
+root- en esas url idare olundugu yer . urls.py de
+template - index.html [html name]
+App.dirs
+context compresor - texniki islerde taninan deyisken
+password Validators- admin panel ucun olan validatorlardi ki
+hansiki parolu nece qoymagimizi tenzimliyir
+1. ./manage.py createsuperuser
+2. ad 
+3. gmail
+4.parol
+
+Language code - site dilin deyismek ucun
+static url-static faylar ucun(js,css,img)
+
+./manage.py startapp + name- app create command
+init.py-pacckage file
+wiews.py- routes file kimi dusun
+MVT-user request gonderir webservere(django) sora gelir url e
+url user gonderdiyi bir unvandir (data istemesidir)
+url - funksiya axtarir yeni wiew gedir .wiew daki eger data lazimdisa
+model.py e gelir(table ) orm isleri  gotur hansiki sql ile python arasinda elaqe qurur
+daha sora tempalete oturur sora datalar wiew qaytarir ve qayidir usere
+
+

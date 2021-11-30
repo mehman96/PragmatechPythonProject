@@ -1,0 +1,89 @@
+docker -contanier texnologiyasindan istifade eden texnologiyadir.
+Contanier- linux da kernelinə yazilan emeliyyat sistem virtiuallasdirmaq
+ucun texnologiyadir
+Bunun esas ferqi odur ki (virtiul masina) ehtiyac olmur yeni Virtualbox, Vmware? Hyper-V və.s
+virtual masinda bele idiki meselen 1 app linux da bir app Mac di
+onun ucun heresi ucun ayri ayri emeliyyat sistemi yuklemeli idik.
+hem vaxt cox alir , hem ram ,yaddas cox istifade edir. Bununla yanasi komputerimizde guclu olmalidir.
+Docker olmadan sistemi run etmek həqiqətən yorucu ola bilər cunki vaxt cox alir, lakin indi docker ilə bunu saniyələr ərzində edə bilərsiniz.
+
+Contanier- hər bir proqramın işləməsi üçün yeni bir əməliyyat sisteminə ehtiyac duymur. 
+Docker Conianter –lər bir-birindən təcrid olunmuş formada çalışır 
+Container texnologiyası Virtual masinlara nisbətən daha az qaynaq sərf edir.
+Hər bir konteyner image əsasında yaradılır.age, konteyneri işə salmaq üçün lazım olan bütün məlumatları özündə birləşdirir. 
+
+docker image əsasında yaradılacaq konteyner daxilindəki konfiqurasiya məlumatları, hansı servisin işə düşəcəyi və s. bu kimi məlumatlar docker engine tərəfindən əldə olunur. 
+Docker İmage(setup) -  konteynerlər üçün şablondur və konteynerləri yaratmaq üçün bir növ nümunə rolunu oynayır. Hər bir image-in bazası mövcuddur, məs, ubuntu, fedora və s. 
+İmage-lər üst üstə yığılmış bir neçə qatdan ibarət olur.işlətmək istədiyimiz proqramların paketlənmiş versiyalarıdır.
+imageler run olanda contanier olur
+
+
+docker hub - hazir imageler install yuklemek ucun (docker pull ubuntu ) misal olaraq(registry)
+deamon - imagele komputerle docker  arasinda kes yaddas rolunu oynayir. 
+
+
+docker file - developerler terefinden hazir yazilmis kodlardi
+docker engine - Linux emeliyyat sisteminde isleyir
+docker build
+hun
+
+
+sudo docker version -  docker olub olmadigini yoxlamaq ucun 
+
+imageler yuklemek 
+sudo docker pull hello-world (image adi )
+
+image run etmek(contanier yaratmaq)
+sudo docker run hello-world (image adi )
+
+sudo docker ps-a 
+yuklediyimiz imagelerin siyahisi (ne vaxt yaratmisiq , aktiv ve ya olmadigini gosterir )
+
+sudo docker system prune -a - yaddasda olan imageleri silir
+sudo docker image
+
+
+eger image silib 
+sudo docker run hello-world (image adi )
+localda tapa bilmesede ama yukluyur, sebeb deamon du o kes yaddas kimidir.imageler deamon
+ustune yuklenir , deamondan image yukleyende birinci ozunde baxir varsa onu qaytarir yoxdusa docker hub dan cekib getirir
+
+export FLASK_APP=main.py
+flask run
+
+WORKDIR /code - ubuntuda code fayl yarat ve daxil ol
+COPY .. - butun fayllar gelsin code papkasina
+noqtenin biri butun fayllar ikinci noqte ise code folderine yuklenmesi ucundu
+
+RUN pip install -r  requirements.txt
+app run olmasi ucun lazim olan txt faylini run et
+
+esas file nedirse onu gostermek(hansi python file run olsun)
+ENV FLASK_APP=main.py
+
+CMD [ "flask" ,'run' ] 
+
+docker file image cevirmek
+sudo docker build . 
+noqte burda docker file gosterir yeni bu directorda olan docker file
+
+sudo docker build -t web_images:latest .
+
+sudo docker run --name web_project web_image:latest
+
+sudo docker ps - run olunan imageleri gosterir....
+
+
+volume- datalari saxliyir (contanier sonenden sora)
+docker compose up -d
+docker compose down
+
+sudo  docker container ls
+sudo docker rm -rf -activ imageler silir.
+
+If lsof -i :5432 doesn't show you any output, you can use sudo ss -lptn 'sport = :5432' to see what process is bound to the port.
+sudo ss -lptn 'sport = :5432'
+
+
+
+
