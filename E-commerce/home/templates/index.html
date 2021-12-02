@@ -1,3 +1,5 @@
+{% load static %}
+
 <!--
 Author: W3layouts
 Author URL: http://w3layouts.com
@@ -20,22 +22,22 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- //for-mobile-apps -->
 <!-- Custom Theme files -->
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-<link href="css/fasthover.css" rel="stylesheet" type="text/css" media="all" />
-<link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
+
+<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<link rel="stylesheet" href="{% static 'css/fasthover.css' %}">
+<link rel="stylesheet" href="{% static 'css/popuo-box.css' %}">
 <!-- //Custom Theme files -->
 <!-- font-awesome icons -->
-<link href="css/font-awesome.css" rel="stylesheet"> 
-<!-- //font-awesome icons -->
+<link rel="stylesheet" href="{% static 'font-awesome' %}">
 <!-- js -->
-<script src="js/jquery.min.js"></script>
-<link rel="stylesheet" href="css/jquery.countdown.css" /> <!-- countdown --> 
-<!-- //js -->  
+
+<script src="{% static 'js/jquery.min.js' %} "></script>
+<link rel="stylesheet" href="{% static 'css/jquery.countdown' %}">
 <!-- web fonts --> 
-<link href='../../../../../../fonts.googleapis.com/css0e15.css?family=Glegoo:400,700' rel='stylesheet' type='text/css'>
-<link href='../../../../../../fonts.googleapis.com/cssaa44.css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
-<!-- //web fonts -->  
+<link href='../../../../../../fonts.googleapis.com/css0e15.css'?family=Glegoo:400,700' rel='stylesheet' type='text/css'>
+<link href='../../../../../../fonts.googleapis.com/cssaa44.css'?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+<!-- //web fonts -
 <!-- start-smooth-scrolling -->
 <script type="text/javascript">
 	jQuery(document).ready(function($) {
@@ -94,7 +96,7 @@ if(typeof _bsa !== 'undefined' && _bsa) {
 <script async src='../../../../../js/autotrack.js'></script>
 
 <meta name="robots" content="noindex">
-<body><link rel="stylesheet" href="../../../../../assests/css/font-awesome.min.css">
+<body><link rel="stylesheet" href="../../../../../assests/{% 'static  'css/font-awesome.min.css'">
 <!-- New toolbar-->
 <style>
 * {
@@ -290,7 +292,7 @@ RIGHT SIDEBAR TOGGLE SECTION
 </div>
 
 	<!-- for bootstrap working -->
-	<script type="text/javascript" src="js/bootstrap-3.1.1.min.js"></script>
+	<script type="text/javascript" src="{% static 'bootstrap-3.1.1.min' %} "></script>
 	<!-- //for bootstrap working -->
 	<!-- header modal -->
 	<div class="modal fade" id="myModal88" tabindex="-1" role="dialog" aria-labelledby="myModal88"
@@ -1559,7 +1561,7 @@ RIGHT SIDEBAR TOGGLE SECTION
 					<div id="counter"> </div>
 				</div>
 				<script src="js/jquery.countdown.js"></script>
-				<script src="js/script.js"></script>
+				<script src="{% static 'js/script.js' %} "></script>
 			</div>
 			<div class="clearfix"> </div>
 		</div>
