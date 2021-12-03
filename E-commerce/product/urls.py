@@ -7,4 +7,5 @@ app_name="product"
 
 urlpatterns = [
     path('' ,product, name='product'),
+    
 ]
