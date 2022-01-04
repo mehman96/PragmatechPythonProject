@@ -1,0 +1,13 @@
+cookies - brazerin yaddasi back end ve front end bir yerde yaddasi
+session -table olan yaddas
+sid - session id - (bizim datalarimizi saxlayan kod) hansiki bir defe login olduqdan sora
+biz hemin saytda giris edende melumatimizi database den goturmur. brazurin ozunde csrf toke icinde hemin bizm bu datalar hash lenmis formada saxlanilir
+expire_date-csrf token vaxt qoyulur meselen 90 gun , 90 gun erzinde login oldugumuz sayta
+girmesek onu log out edir. tehlukesizlik baximindan.
+
+request -url getirir, hansiki sehifenin yuxari hisseinde url olur(sehifenin url)
+
+
+Authentication- login olmaq
+Autherization - hansi sehifeler ola biler ki icaze bizim icazemiz olmadan o sehifeye log in
+oluna bilmesin

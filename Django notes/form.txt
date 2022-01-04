@@ -17,4 +17,5 @@ output:None
 {% csrf_token %} (middleware)   - formlarda daxil etdiyimizi gizltmek, yeni meseln
 formda ad soyad daxil etdik o yuxarida (link olan yer) gorsenir , onun qarsisni
 almaq ucun istifade edilir.
+https://ccbv.co.uk/ - class wiews
 

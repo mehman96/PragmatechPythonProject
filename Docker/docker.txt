@@ -17,6 +17,7 @@ Docker İmage(setup) -  konteynerlər üçün şablondur və konteynerləri yara
 İmage-lər üst üstə yığılmış bir neçə qatdan ibarət olur.işlətmək istədiyimiz proqramların paketlənmiş versiyalarıdır.
 imageler run olanda contanier olur
 
+docker - go dilinde yazilib
 
 docker hub - hazir imageler install yuklemek ucun (docker pull ubuntu ) misal olaraq(registry)
 deamon - imagele komputerle docker  arasinda kes yaddas rolunu oynayir. 
@@ -69,7 +70,7 @@ noqte burda docker file gosterir yeni bu directorda olan docker file
 
 sudo docker build -t web_images:latest .
 
-sudo docker run --name web_project web_image:latest
+sudo docker run image adı
 
 sudo docker ps - run olunan imageleri gosterir....
 
@@ -83,6 +84,12 @@ sudo docker rm -rf -activ imageler silir.
 
 If lsof -i :5432 doesn't show you any output, you can use sudo ss -lptn 'sport = :5432' to see what process is bound to the port.
 sudo ss -lptn 'sport = :5432'
+
+docker ps - imagelerin siyahis
+contanier run etmek
+docker exec -it image id -si bash
+docker contanier ls-contanier siyahisi(aktivdi ya sonuludu)
+docker compose - python- da yazılıb bir neçə image run etmək üçündür.(hazır dockeri run edir)
 
 
 

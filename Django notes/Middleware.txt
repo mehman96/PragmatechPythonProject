@@ -1,0 +1,12 @@
+middleware- url filter, detekde  olunmasi ucun istifade olunur .
+middleware gelen url yoxlamaq ucundur.meselen saytda icaze verilmeyen bir user olsa
+hemin userden gelen url(request , sorgu) detekde edir eger icaze vasa sayt giris ede bilersen yoxdusa middleware buna icaze vermir
+
+
+middleware icinde cagrilan ilk comandlar
+init ve call 
+
+init bir defe cagrilir
+call - her request de cagrilir
+
+process_view()- views den evvel handle elemek ucun
